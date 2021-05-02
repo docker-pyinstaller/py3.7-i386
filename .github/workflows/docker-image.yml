@@ -35,8 +35,8 @@ jobs:
           push: true
           file: Dockerfile
           tags: |
-            mayankfawkes/pyinstaller:${{ steps.get_version.outputs.VERSION }}-py3.8-i386
-            mayankfawkes/pyinstaller:${{ steps.get_version.outputs.VERSION }}-py3.8.9-i386
+            mayankfawkes/pyinstaller:${{ steps.get_version.outputs.VERSION }}-py3.7-i386
+            mayankfawkes/pyinstaller:${{ steps.get_version.outputs.VERSION }}-py3.7.9-i386
       
       - name: Create Release
         uses: actions/create-release@v1
